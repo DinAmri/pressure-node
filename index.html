@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pressure Node — FIFA World Cup 2026 USA</title>
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+
+
+<body>
+
+<!-- Full-screen background -->
+<section class="hero">
+    <img 
+        src="img/img-worldcup.jpg" 
+        alt="Jim Simons" 
+        class="hero-bg"
+        onerror="this.src='https://images.unsplash.com/photo-1543857770-724574971ca3?q=80&w=1000&auto=format&fit=crop'"
+    >
+</section>
+
+<!-- BLUE BLOCK -->
+<div class="blue-block wrapper">
+    <h3 class="small-so">PN</h3>
+    <p class="sub-label">Pressure Node</p>
+    <hr class="hr-small">
+
+    <img src="img/ic-arrow-down.svg" alt="Arrow Down" class="arrow-icon">
+
+    <p class="operator-id">Pressure #001</p>
+    <p class="operator-name">FIFA World Cup</p>
+</div>
+
+<!-- RED BLOCK -->
+<div class="red-block wrapper">
+    <h1 class="title">
+        Not Cheap by Design: The Reclassification of the World Cup
+    </h1>
+
+    <hr class="hr-medium">
+
+    <nav class="toc">
+
+        <a href="worldcup/index.html#overview" class="toc-link">
+            <h2>1. Situation Overview</h2>
+        </a>
+    
+        <a href="worldcup/index.html#signals" class="toc-link">
+            <h2>2. Surface Signals</h2>
+        </a>
+    
+        <a href="worldcup/index.html#context" class="toc-link">
+            <h2>3. Structural Context</h2>
+        </a>
+    
+        <a href="worldcup/index.html#incentives" class="toc-link">
+            <h2>4. Incentive Stack</h2>
+        </a>
+    
+        <a href="worldcup/index.html#pressure" class="toc-link">
+            <h2>5. The Pressure Node</h2>
+        </a>
+    
+        <a href="worldcup/index.html#effects" class="toc-link">
+            <h2>6. Second-Order Effects</h2>
+        </a>
+    
+        <a href="worldcup/index.html#irreversible" class="toc-link">
+            <h2>7. What Will Not Reverse</h2>
+        </a>
+    
+        <a href="worldcup/index.html#meta" class="toc-link">
+            <h2>8. Meta Insight</h2>
+        </a>
+    
+    </nav>
+</div>
+
+
+
+<footer class="so-footer">
+    <a href="https://rhentap.com/" target="_blank" rel="noopener noreferrer" class="footer-logo-link">
+        <img src="img/trifecta.svg" alt="rhentap logo" class="footer-logo" />
+    </a>
+    <div class="footer-text">Din Amri for rhentap • Built in Manchester</div>
+</footer>
+
+<!-- SCROLL DIMMING LOGIC -->
+<script>
+document.addEventListener('scroll', () => {
+    const hero = document.querySelector('.hero-bg');
+    const maxFade = 0.6;
+    const minFade = 0.25;
+
+    const scrollRange = 400;
+    const scrolled = Math.min(window.scrollY, scrollRange);
+
+    const newOpacity = maxFade - (scrolled / scrollRange) * (maxFade - minFade);
+    if (hero) hero.style.opacity = newOpacity;
+});
+</script>
+
+</body>
+</html>
