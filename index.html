@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pressure Node — FIFA World Cup 2026 USA</title>
-    
-    <!-- Main stylesheet -->
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
@@ -16,10 +15,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-7PNCTW7715');
 </script>
-
 
 <body>
 
@@ -27,7 +24,7 @@
 <section class="hero">
     <img 
         src="img/img-worldcup.jpg" 
-        alt="Jim Simons" 
+        alt="World Cup stadium"
         class="hero-bg"
         onerror="this.src='https://images.unsplash.com/photo-1543857770-724574971ca3?q=80&w=1000&auto=format&fit=crop'"
     >
@@ -54,69 +51,42 @@
     <hr class="hr-medium">
 
     <nav class="toc">
-
-        <a href="worldcup/index.html#overview" class="toc-link">
-            <h2>1. Situation Overview</h2>
-        </a>
-    
-        <a href="worldcup/index.html#signals" class="toc-link">
-            <h2>2. Surface Signals</h2>
-        </a>
-    
-        <a href="worldcup/index.html#context" class="toc-link">
-            <h2>3. Structural Context</h2>
-        </a>
-    
-        <a href="worldcup/index.html#incentives" class="toc-link">
-            <h2>4. Incentive Stack</h2>
-        </a>
-    
-        <a href="worldcup/index.html#pressure" class="toc-link">
-            <h2>5. The Pressure Node</h2>
-        </a>
-    
-        <a href="worldcup/index.html#effects" class="toc-link">
-            <h2>6. Second-Order Effects</h2>
-        </a>
-    
-        <a href="worldcup/index.html#irreversible" class="toc-link">
-            <h2>7. What Will Not Reverse</h2>
-        </a>
-    
-        <a href="worldcup/index.html#meta" class="toc-link">
-            <h2>8. Meta Insight</h2>
-        </a>
-    
+        <a href="/worldcup/#overview" class="toc-link"><h2>1. Situation Overview</h2></a>
+        <a href="/worldcup/#signals" class="toc-link"><h2>2. Surface Signals</h2></a>
+        <a href="/worldcup/#context" class="toc-link"><h2>3. Structural Context</h2></a>
+        <a href="/worldcup/#incentives" class="toc-link"><h2>4. Incentive Stack</h2></a>
+        <a href="/worldcup/#pressure" class="toc-link"><h2>5. The Pressure Node</h2></a>
+        <a href="/worldcup/#effects" class="toc-link"><h2>6. Second-Order Effects</h2></a>
+        <a href="/worldcup/#irreversible" class="toc-link"><h2>7. What Will Not Reverse</h2></a>
+        <a href="/worldcup/#meta" class="toc-link"><h2>8. Meta Insight</h2></a>
     </nav>
+
     <p class="spotify-cta">
-        <a href="https://open.spotify.com/episode/0k4Ba9gsQWBiRmOhPdHvJA?si=VBjO_55YR2-kzLZ3oHKkFg" target="_blank" class="spotify-link">
+        <a href="https://open.spotify.com/episode/0k4Ba9gsQWBiRmOhPdHvJA" target="_blank" class="spotify-link">
             <img src="img/lg-spotify.svg" alt="spotify logo" class="spotify-logo">
             <span>Listen to the Pressure #001 on Spotify</span>
         </a>
     </p>
 </div>
 
-
-
 <footer class="so-footer">
-    <a href="https://rhentap.com/" target="_blank" rel="noopener noreferrer" class="footer-logo-link">
+    <a href="https://rhentap.com/" target="_blank" class="footer-logo-link">
         <img src="img/trifecta.svg" alt="rhentap logo" class="footer-logo" />
     </a>
     <div class="footer-text">Din Amri for rhentap • Built in Manchester</div>
 </footer>
 
-<!-- SCROLL DIMMING LOGIC -->
 <script>
 document.addEventListener('scroll', () => {
     const hero = document.querySelector('.hero-bg');
     const maxFade = 0.6;
     const minFade = 0.25;
-
     const scrollRange = 400;
     const scrolled = Math.min(window.scrollY, scrollRange);
-
-    const newOpacity = maxFade - (scrolled / scrollRange) * (maxFade - minFade);
-    if (hero) hero.style.opacity = newOpacity;
+    if (hero) {
+        hero.style.opacity =
+            maxFade - (scrolled / scrollRange) * (maxFade - minFade);
+    }
 });
 </script>
 
